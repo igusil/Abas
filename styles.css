@@ -1,16 +1,19 @@
 /*
 =============== 
-Fonts
+Fontes
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 /*
 =============== 
-Variables
+Variaveis
 ===============
 */
-
+* {
+  font-family: 'DM Mono', monospace;
+}
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
@@ -37,6 +40,8 @@ Variables
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-11: hsl(240, 2%, 8%);
+  --clr-grey-12: hsl(240, 4%, 23%);
   --clr-white: #fff;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
@@ -55,7 +60,7 @@ Variables
 }
 /*
 =============== 
-Global Styles
+Estilo Global
 ===============
 */
 
@@ -67,8 +72,8 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
+  /*font-family: var(--ff-secondary);*/
+  background: var(--clr-grey-11);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -94,7 +99,7 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
+  /*font-family: var(--ff-primary);*/
 }
 h1 {
   font-size: 3rem;
@@ -209,7 +214,7 @@ About
   }
 }
 .about {
-  background: var(--clr-white);
+  background: var(--clr-grey-12);
   border-radius: var(--radius);
   display: grid;
   grid-template-rows: auto 1fr;
@@ -249,6 +254,7 @@ About
 /* hide content */
 .content {
   display: none;
+  color: var(--clr-grey-6);
 }
 .tab-btn.active {
   background: var(--clr-white);
